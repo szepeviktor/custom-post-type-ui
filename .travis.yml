@@ -41,7 +41,7 @@ install:
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - |
     if [[ ${TRAVIS_PHP_VERSION:0:3} == "7.2" ]]; then
-      composer global require --dev phpstan/phpstan-shim "szepeviktor/phpstan-wordpress:^0.2.0" "giacocorsiglia/wordpress-stubs:^4.9.0"
+      composer global require --dev "phpstan/phpstan-shim" "szepeviktor/phpstan-wordpress:^0.2.0"
     fi
 
 # No unit tests :(
