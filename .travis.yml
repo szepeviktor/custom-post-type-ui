@@ -36,6 +36,8 @@ matrix:
     - php: nightly
       env: WP_VERSION=4.9 WP_MULTISITE=1
 
+before_install:
+  - phpenv config-rm xdebug.ini
 install:
   - composer install --prefer-dist --no-suggest
   - export PATH="$HOME/.config/composer/vendor/bin:$PATH"
